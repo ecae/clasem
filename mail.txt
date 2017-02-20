@@ -1,0 +1,13 @@
+MAIL_DRIVER=smtp
+MAIL_HOST=smtp.sendgrid.net
+MAIL_PORT=587
+MAIL_USERNAME=ecae11
+MAIL_PASSWORD=alexander1993
+MAIL_ENCRYPTION=tls
+
+MAIL_DRIVER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USERNAME=sisman.clasem@gmail.com
+MAIL_PASSWORD=alexander1993
+MAIL_ENCRYPTION=tls

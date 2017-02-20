@@ -1,0 +1,295 @@
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+html,body{
+    width:100% ;
+    height:100%;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    font-family: Calibri;
+}
+.contenedor{
+    display: flex;
+    height: 700px;
+    width: 1000px;
+    flex-direction: column;
+}
+.bordeado{
+    border: 1px solid black;
+}
+.cabezera{
+    display: flex;
+    box-sizing: border-box;
+    height: 80px;
+}
+.informacion{
+    height: 50px;
+    display: flex;
+}
+.contenido{
+    height: 390px;
+}
+.footer{
+    height: 150px;
+    display: flex;
+}
+.logo{
+    width: 25%;
+    height: 100%;
+    font-weight: bold;
+}
+.titulos{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+.titulo1{
+    width: 100%;
+    height: 40%;
+    color: white;
+    background-color: #006fad;
+    line-height: 30px;
+    font-size: 15px;
+}
+.titulo2{
+    width: 100%;
+    height: 60%;
+    line-height: 50px;
+    font-size: 17px ;
+}
+.paginacion{
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+div[class*="pag-"]{
+    width: 100%;
+    height: 33.33%;
+    text-align: center;
+}
+.pag-2{
+    display: flex;
+}
+div[class*="fect-"]{
+    width: 50%;
+    height:100%;
+    text-align: center;
+}
+.logo1{
+    color:#006fad ;
+    font-size: 45px;
+    height: 70%;
+    width: 100%;
+    text-align: center;
+}
+.logo2{
+    font-size: 20px;
+    height: 30%;
+    width: 90%;
+    text-align: right;
+}
+div[class*="div-"]{
+    text-align: center;
+    flex: 1;
+    border-top:0px ;
+}
+div[class*="div2-"]{
+    text-align: center;
+    flex: 1;
+    border-top:0px ;
+}
+.contenido-informacion{
+    width: 100%;
+    height: 50%;
+    font-weight: bold;
+}
+.enblanco{
+    width: 100%;
+    height: 50%;
+}
+.fecha,.orden,.descriptrabajo{
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    line-height: 45px;
+}
+.loca-averia{
+    width: 100%;
+    height: 50%;
+    font-weight: bold;
+    font-size: 15px;
+}
+.loca-averia2{
+    width: 100%;
+    height: 50%;
+    font-weight: bold;
+    display: flex;
+}
+div[class*="letras-"]{
+    text-align: center;
+    flex: 1;
+    border-bottom: 0px;
+}
+.tipomtto{
+    width: 100%;
+    height: 50%;
+    font-weight: bold;
+}
+.tipomtto2{
+    width: 100%;
+    height: 50%;
+    font-weight: bold;
+    display: flex;
+}
+div[class*="numeros-"]{
+    flex: 1;
+    text-align: center;
+    border-bottom: 0px;
+}
+div[class*="numeros2-"]{
+    flex: 1;
+    text-align: center;
+    border-top: 0px;
+}
+.div2-5{
+    flex-grow: 1;
+}
+.encabezado2{
+    height: 50px;
+    display: flex;
+}
+div[class*="enca-"],div[class*="row-"]{
+    text-align: center;
+    width: 124.75px;
+
+}
+div[class*="enca-"]:nth-child(5),div[class*="row-"]:nth-child(5){
+    width: 249.50px;
+}
+.enca-6,.enca-7{
+    display: flex;
+}
+.duraciontarea,.cantidadpersonal,.cantidad,.codigo,.duraciontareaRow,.cantidadpersonalRow{
+    width: 50%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 15px;
+}
+.duraciontarea,.codigo{
+    border-right: 1px solid black;
+}
+.cantidadpersonal,.cantidad{
+    border-left: 1px solid black;
+}
+.cantidad{
+    line-height: 45px;
+}
+.row{
+    display: flex;
+    height: 25px;
+    border-top: 0px;
+}
+.row-2,.row-4,.row-6,.row-7{
+    display: flex;
+}
+div[class*="row-"]{
+    border-top: 0px;
+}
+
+div[class*="letras2-"]{
+    text-align: center;
+    flex: 1;
+    border-top: 0px;
+}
+.parte-1{
+    width: 35%;
+    height: 100%;
+
+}
+.parte-2{
+    width: 64%;
+    height: 100%;
+}
+.parte-3{
+    width: 1%;
+    height: 100%;
+}
+.leyenda{
+    width: 100%;
+    height: 20%;
+    font-weight: bold;
+    line-height: 25px;
+}
+.leyenda2{
+    margin-left: 5px;
+}
+.listas{
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+.lista-0{
+    width: 10%;
+    height: 100%;
+}
+.lista-1,.lista-2{
+    width: 30%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 15px;
+}
+.lista-2{
+    width: 50%;
+    height: 100%;
+
+}
+.ul-averia,.ul-mantenimientos{
+    margin-top: 5px;
+}
+li{
+    list-style: none;
+    left: 10px;
+    top:5px;
+}
+.titulo-observacones{
+    width: 100%;
+    height: 20%;
+    line-height: 25px;
+    font-weight: bold;
+}
+.observaciones{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.firmas{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    font-weight: bold;
+}
+div[class*="firma-"]{
+    flex: 1;
+    text-align: center;
+    border-top: 1px solid black;
+    margin-right: 15px;
+}
+div[class*="observaciones-"]{
+    flex: 1;
+    border-bottom: 1px solid black;
+}
+div[class*="observaciones-"]:nth-child(3){
+    border-bottom: 0px solid black;
+}
+.normal{
+    font-weight: normal;
+}

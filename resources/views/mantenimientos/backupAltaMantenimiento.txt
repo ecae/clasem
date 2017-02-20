@@ -1,0 +1,57 @@
+function actualizar_alta_mantenimiento() {
+
+       var token = $("#token").val();
+       $("#form_alta_mantenimiento").on('submit', function(e){
+           e.preventDefault();
+           var form = $(this);
+           var bool=form.parsley().validate();
+           if(bool){
+               var dato = $("#proveedor").val();
+               var dato2 = $("#interno").val();
+               var dato3=$("#precio").val();
+               var dato4=$('#Nlimite_horometro').val();
+               var dato5 = $("#Nfecha_inicial").val();
+               var dato6 = $("#observacion").val();
+               var id= $("#id_actualizar_alta").val();
+
+               $.ajax({
+                   url: 'altaMantenimientos',
+                   headers: { 'X-CSRF-Token' : token },
+                   type: 'POST',
+                   dataType: 'json',
+                   data: {id:id,
+                          proveedor:dato,
+                          interno:dato2,
+                          costo:dato3,
+                          nHorometro: dato4,
+                          nfecha_inicial:dato5,
+                          observacion:dato6
+                   },
+                   success: function(data1){
+                     /*
+                       datatable();
+                       $("#myModal8").modal('toggle');
+                       toastr.success('Datos registrados  : '+data1.mensaje+'', {timeOut: 5000});
+                    */
+                   },
+                   error: function(data1){
+                     /*
+                       $("#myModal8").modal('toggle');
+                       var errors = '';
+                       for(datos in data1.responseJSON){
+                           errors += '* '+data.responseJSON[datos] + '<br>';
+                       }
+                       toastr.error(errors, {timeOut: 5000});
+                    */
+                   }
+
+               });
+
+
+           }else{
+
+               $("#myModal8").modal('toggle');
+               toastr.success('Datos no validos', {timeOut: 5000});
+           }
+       });
+   }

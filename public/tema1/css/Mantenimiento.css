@@ -1,0 +1,232 @@
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+html,body{
+    width:100% ;
+    height:100%;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    font-family: Calibri;
+}
+.contenedor{
+    display: flex;
+    height: 1200px;
+    width: 1000px;
+    flex-direction: column;
+}
+.bordeado{
+    border: 1px solid black;
+}
+.cabezera{
+    display: flex;
+    box-sizing: border-box;
+    height: 80px;
+}
+.informacion{
+    height: 50px;
+    display: flex;
+}
+.contenido{
+    height: 390px;
+}
+.footer{
+    height: 150px;
+    display: flex;
+}
+.logo{
+    width: 25%;
+    height: 100%;
+    font-weight: bold;
+}
+.titulos{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+.titulo1{
+    width: 100%;
+    height: 33%;
+    color: white;
+    background-color: #006fad;
+    line-height: 30px;
+    font-size: 15px;
+    border-bottom: 1px solid black;
+}
+.titulo2{
+    width: 100%;
+    height: 67%;
+    line-height: 50px;
+    font-size: 17px ;
+    border-top: 1px solid black;
+}
+.paginacion{
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+div[class*="pag-"]{
+    width: 100%;
+    height: 33.33%;
+    text-align: center;
+}
+.pag-2{
+    display: flex;
+}
+div[class*="fect-"]{
+    width: 50%;
+    height:100%;
+    text-align: center;
+}
+.logo1{
+    color:#006fad ;
+    font-size: 45px;
+    height: 70%;
+    width: 100%;
+    text-align: center;
+}
+.logo2{
+    font-size: 20px;
+    height: 30%;
+    width: 90%;
+    text-align: right;
+}
+.separador-blanco,.separador-blanco2{
+    height: 17px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    font-weight: bold;
+    line-height: 15px ;
+}
+.separador-blanco2{
+    border-bottom: 1px solid black;
+    background-color: #d9d9d9;
+    border-bottom: 0px;
+}
+.informacion-reporte{
+    height: 100px;
+    display: flex;
+}
+.infor-1{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.infor-2{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.fecha,.mantenimiento,.obra,.vacio1,.mantenimiento-clase,.vacio2{
+    flex-grow: 1;
+    font-weight: bold;
+    line-height: 30px;
+    border-right: 0px;
+    border-left: 0px;
+}
+.fecha,.mantenimiento,.vacio1,.mantenimiento-clase,.nombre,.modelo,.serie,.completar-1,.completar-2,.completar-3{
+    border-bottom: 1px solid black;
+}
+.mantenimiento,.obra,.mantenimiento-clase,.vacio2,.modelo,.serie,.otras,.completar-2,.completar-3,.completar-4{
+    border-top: 1px solid black;
+}
+.vacio2{
+    font-weight: normal;
+}
+.margen-left{
+    margin-left: 10px;
+}
+.mantenimiento-clase{
+    display: flex;
+}
+div[class*="orden-"]{
+    flex: 1;
+}
+.orden-1,.orden-2,.orden-3{
+    border-right: 1px solid black;
+}
+.orden-2,.orden-3,.orden-4{
+    border-left: 1px solid black;
+}
+.orden-2,.orden-4{
+    font-weight: normal;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+.informacion-maquinaria{
+    height: 133px;
+    display: flex;
+}
+.nombre,.modelo,.serie,.otras{
+    flex: 1;
+    line-height: 30px;
+    font-weight: bold;
+}
+div[class*="completar-"]{
+    flex: 1;
+    line-height: 30px;
+}
+.completar-2,.completar-3{
+    display: flex;
+
+}
+.completar2-1{
+    width: 50%;
+    border-right: 1px solid black;
+}
+.completar2-2{
+    width: 20%;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    font-weight: bold;
+}
+.completar2-3{
+    width: 30%;
+    border-left: 1px solid black;
+}
+.actividad{
+    height: 300px;
+    border:2px solid black;
+    line-height: 50px;
+}
+.recomendaciones{
+    height: 150px;
+    border-top: 2px solid black ;
+    border-right: 2px solid black ;
+    border-left: 2px solid black ;
+    line-height: 50px;
+}
+.firma{
+    height: 150px;
+    border-bottom: 2px solid black ;
+    border-right: 2px solid black ;
+    border-left: 2px solid black ;
+    display: flex;
+}
+.firma-1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.firma1-1{
+    height: 60%;
+}
+.firma2-1{
+    height: 40%;
+    border-top: 2px solid black;
+    text-align: center;
+    margin-right: 140px;
+    margin-left: 140px;
+    font-weight: bold;
+}
